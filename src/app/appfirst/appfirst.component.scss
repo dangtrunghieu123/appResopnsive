@@ -1,0 +1,425 @@
+
+.card-first{
+    width: 100%;
+    border:1px solid #CCCCCC;
+    .title{
+        background: white;
+        p{
+            margin-bottom: 0;
+            padding:10px 0 2px 0;
+            position:relative;
+           i{
+               font-size:25px;
+               padding:10px 20px;
+           }
+           span{
+               font-size:25px;
+           }
+           .Rotate{
+            position: absolute;
+            top:7%;
+            right:7%;
+            color:gray;
+            font-size:30px;
+           }
+           
+        }
+     
+        .contenText{
+            height:0;
+            overflow: hidden;
+            padding:10px 30px;
+            .color{
+                display: flex;
+                align-items: center;
+                ul{
+                    // display: flex;
+                    list-style: none;
+                    margin-top:20px;
+                    li{
+                        display: inline-block;
+                        border:1px solid gray;
+                        padding:8px;
+                        
+                        margin-right:20px;
+                        .Color{
+                            height:30px;
+                            width: 50px;
+                            
+                        }
+                        .black{
+                            background:black;
+                        }
+                        .red{
+                            background:red;
+                        }
+                        .blue{
+                            background:blue;
+                        }
+                        .violet{
+                            background:violet;
+                        }
+                        .orange{
+                            background:orangered;
+                        }
+                    }
+                }
+                p{
+                    font-size:15px;
+
+                }
+            }
+            .changeColor{
+                form {
+                    display: flex;
+                    align-items: center;
+                    margin-top:20px;
+                    margin-left:200px;
+                    .formInput{
+                         width: 30%;
+                         margin-right:10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.card-second{
+    margin-top:20px;
+    width: 100%;
+    border:1px solid #CCCCCC;
+    .title{
+        background: white;
+        p{
+            margin-bottom: 0;
+            padding:10px 0 2px 0;
+            position:relative;
+           i{
+               font-size:25px;
+               padding:10px 20px;
+           }
+           span{
+               font-size:25px;
+           }
+           .Rotate{
+            position: absolute;
+            top:7%;
+            right:7%;
+            color:gray;
+            font-size:30px;
+           }
+           
+        }
+     
+        .contenText{
+            height:0;
+            overflow: hidden;
+            padding:10px 30px;
+            .btn-hide{
+                button{
+                    background:none;
+                    color:blue;
+                    outline: none;
+                    border: none;
+                }
+                select{
+                    width: 50%;
+                }
+            }
+            
+        }
+    }
+}
+
+.card-third{
+    margin-top:20px;
+    width: 100%;
+    border:1px solid #CCCCCC;
+    .title{
+        background: white;
+        p{
+            margin-bottom: 0;
+            padding:10px 0 2px 0;
+            position:relative;
+           i{
+               font-size:25px;
+               padding:10px 20px;
+           }
+           span{
+               font-size:25px;
+           }
+           .Rotate{
+            position: absolute;
+            top:7%;
+            right:7%;
+            color:gray;
+            font-size:30px;
+           }
+           
+        }
+     
+        .contenText{
+            height:0;
+            overflow: hidden;
+            padding:10px 30px;
+          
+            .apple{
+                text-align: right;
+                button{
+                    background: none;
+                    color:blue;
+                    border:none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.card-four{
+    margin-top:20px;
+    width: 100%;
+    border:1px solid #CCCCCC;
+    .title{
+        background: white;
+        p{
+            margin-bottom: 0;
+            padding:10px 0 2px 0;
+            position:relative;
+           i{
+               font-size:25px;
+               padding:10px 20px;
+           }
+           span{
+               font-size:25px;
+           }
+           .Rotate{
+            position: absolute;
+            top:7%;
+            right:7%;
+            color:gray;
+            font-size:30px;
+           }
+           
+        }
+     
+        .contenText{
+            height:0;
+            overflow: hidden;
+            padding:10px 30px;
+            // margin-top:30px;
+          .ScreenCenter div{
+            width:100px;
+            height:100px;
+            border:1px solid gray;
+            position: relative;
+            img{
+                position: absolute;
+                top:20%;
+                left:20%;
+            }
+          }
+        }
+    }
+}
+.card-five{
+    margin-top:20px;
+    width: 100%;
+    border:1px solid #CCCCCC;
+    .title{
+        background: white;
+        p{
+            margin-bottom: 0;
+            padding:10px 0 2px 0;
+            position:relative;
+           i{
+               font-size:25px;
+               padding:10px 20px;
+           }
+           span{
+               font-size:25px;
+           }
+           .Rotate{
+            position: absolute;
+            top:7%;
+            right:7%;
+            color:gray;
+            font-size:30px;
+           }
+           
+        }
+     
+        .contenText{
+            height:0;
+            overflow: hidden;
+            padding:10px 30px;
+            // margin-top:30px;
+          
+        }
+    }
+}
+.bgIphone{
+  
+    height:100vh;
+    position: fixed;
+    top:10px;
+    img{
+        margin-left:30px;
+        height:600px;
+    }
+    .AppContent{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:10%;
+        left:13%;
+        width: 83%;
+        height:469px;
+        border-radius:2px;
+        overflow-y: scroll;
+        .img1{
+            margin-top:20px;
+            width: 130px;
+            height:130px;
+        }
+        h4{
+            padding-top:20px;
+        }
+        .img2{
+            margin-top:30px;
+            width: 180px;
+            height:70px;
+        }
+    }
+    // .AppContent::-webkit-scrollbar{
+    //     width: 10px;
+    // }
+  
+    // .AppContent::-webkit-scrollbar-track {
+    //     -webkit-box-shadow: inset 0 0 6px #66FFFF ; 
+    //     border-radius: 10px;
+    // }
+     
+    // .AppContent::-webkit-scrollbar-thumb {
+    //     border-radius: 10px;
+    //     background: blue;        // -webkit-box-shadow: inset 0 0 6px #0000AA; 
+    // }
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 80%;
+  }
+  input:focus{
+      outline: none;
+  }
+
+  //responsive
+  @media  screen and (max-width: 1200px){
+    .left{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .bgIphone img{
+        margin-left:0;
+    }
+    .bgIphone .AppContent {
+        left:5%;
+        width: 90%;
+    }
+  }
+  @media  screen and (max-width: 1000px){
+    .left{  
+        padding-left:90px;
+        padding-right:100px;
+        .title {
+            .contenText .changeColor form{
+             
+                display: flex;
+                align-items: center;
+                margin-top:20px;
+                margin-left:0;
+               
+             }
+             .content1{
+                 overflow: auto;
+             }
+        } 
+        .card-second .col-2{
+            flex: none;
+            max-width: none;
+        }
+        .card-second .contenText{
+            overflow-y: scroll;
+        }
+    }
+    .bgIphone img{
+        margin-left:-25px;
+    }
+    .bgIphone .AppContent {
+        left:-3.3%;
+        width: 98%;
+    }
+    
+  }
+  @media  screen and (max-width: 780px){
+      .left{
+        padding-left:20px;
+        padding-right:100px;
+        .title p span{
+            font-size:15px;
+        }
+        .card-four .col-2 {
+            flex: none;
+            max-width: none;
+        }
+        .card-five .col-2 {
+            flex: none;
+            max-width: none;
+        }
+        .card-third  .col-2{
+           
+            flex: none;
+            max-width: none;
+        }
+        .card-third .contenText{
+            overflow-y: scroll;
+        }
+        .card-first .title .contenText .changeColor form .formInput{
+               
+                width: 50%;
+                margin-right:10px;
+            }
+            
+      }
+    .bgIphone img{
+        margin-left:-83px;
+    }
+    .bgIphone .AppContent {
+        left:-28.4%;
+        width: 123%;
+    }
+  }
+
+  @media  screen and (max-width: 767px){
+    .bgIphone{
+        display: none;
+    }
+    .left{
+        flex: none;
+        max-width: none;
+    }
+  }
+  @media  screen and (max-width: 600px){
+    .left{
+        flex: none;
+        max-width: none;
+        margin-left:30px;
+    }
+  }
+
+  

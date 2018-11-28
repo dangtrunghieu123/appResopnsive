@@ -1,0 +1,348 @@
+<section style="background:#EEEEEE;padding-bottom: 40px;">
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col-8 pt-3 left" >
+        <p style="text-align:right;color:blue;font-size:20px;cursor: pointer;">Link to App Stores directly</p>
+        <div class="row" style="">
+          <div class="col-12" class="card-first">
+            <div class="title">
+              <p (click)="clickMe()" [@changeBG]="stateChangeBG" id="test">
+                <i class="fa fa-eyedropper"></i>
+                <span class="span">Design & customization</span>
+                <span [@rotate]="stateRotate" class="Rotate" style="">
+                  <i class="fa fa-angle-down"></i>
+                </span>
+              </p>
+              <div class="contenText content1" [@animateSlide]='stateOpen'>
+                <p>Choose a color scheme for your page</p>
+                <div class="color">
+                  <p>
+                    <span>color:</span>
+                    <i class="fa fa-question-circle"></i>
+                  </p>
+                  <ul>
+                    <li class="li1">
+                      <div class="Color black"></div>
+                    </li>
+                    <li class="li2">
+                      <div class="Color red"></div>
+                    </li>
+                    <li class="li3" >
+                      <div class="Color blue"></div>
+                    </li>
+                    <li class="li4">
+                      <div class="Color violet"></div>
+                    </li>
+                    <li class="li5">
+                      <div class="Color orange"></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="changeColor">
+                  <form>
+                    <div class="form-group formInput">
+                      <label>Primary</label>
+                      <div class="input-group">
+                        <input class="form-control">
+                        <div class="input-group-append" style="border:1px solid gray;padding:5px">
+                          <div style="width: 30px;height:25px;background: black"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-right:20px;font-size:30px;">
+                      <i class="fa fa-arrows-h"></i>
+                    </div>
+                    <div class="form-group formInput">
+                      <label>secondadry</label>
+                      <div class="input-group">
+                        <input class="form-control">
+                        <div class="input-group-append" style="border:1px solid gray;padding:5px">
+                          <div style="width: 30px;height:25px;background: black"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" class="card-second">
+            <div class="title">
+              <p (click)="clickMe1()" [@changeBG]="stateChangeBG1">
+                <i class="fa fa-buysellads"></i>
+                <span>App Information</span>
+                <span [@rotate]="stateRotate1" class="Rotate" style="">
+                  <i class="fa fa-angle-down"></i>
+                </span>
+              </p>
+              <div class="contenText" [@animateSlide1]='stateOpen1'>
+                <p>Provide your App information, upload your app logo and add some context to your page</p>
+                <div class="form1 p-3">
+                  <form [formGroup]="app" (ngSubmit)="submit()">
+
+                    <div class="row">
+                      <div class="col-2">
+                        <label>App name</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" class="form-control" placeholder="name of your app" formControlName="nameApp">
+                      </div>
+
+                    </div>
+                    <div class="row  pt-4">
+                      <div class="col-2">
+                        <label>Developer</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" class="form-control" placeholder="name of app developer" formControlName="nameDeveloper">
+                      </div>
+                    </div>
+                    <div class="row  pt-4">
+                      <div class="col-2">
+                        <label>App logo</label>
+                      </div>
+                      <div class="col-4">
+                        <img src="https://photo.thuyetphaponline.com/wp-content/uploads/2018/08/hinh-nen-dep-nhat-2018-82.jpg" class="img-fluid">
+                      </div>
+                      <div class="col-4 pt-5">
+                        <input type="file" formControlName="img">
+                      </div>
+                    </div>
+                    <div class="row  pt-4">
+                      <div class="col-2">
+                        <label>Title</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" class="form-control" placeholder="add a title your page" formControlName="nameTitle">
+                      </div>
+                    </div>
+                    <div class="row  pt-4">
+                      <div class="col-2">
+                        <label>Website</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" class="form-control" placeholder="www.yoursite.com" formControlName="nameWebsite">
+                      </div>
+                    </div>
+                    <div class="row  pt-4">
+                      <div class="col-2">
+                        <label>Discription</label>
+                      </div>
+                      <div class="col-8">
+                        <textarea class="form-control" rows="5" formControlName="nameDiscription"></textarea>
+                      </div>
+                    </div>
+                    <div class="row  mt-4 pt-4" style="border-top:1px solid gray">
+                      <div class="col-2">
+                        <label>Button</label>
+                      </div>
+                      <div class="col-8 btn-hide">
+                        <button>
+                          <u>Add button</u>
+                        </button>
+                        <div>
+                          <div style="display: flex;align-items:center;">
+                            <select class="form-control mt-2 mr-3" formControlName="">
+                              <option>Learn more</option>option
+                              <option>Watch video</option>
+                              <option>View more app</option>
+                              <option style="color:blue">Custom app</option>
+                            </select>
+                            <input type="text" placeholder="www.yourWebsite.com" class="form-control" style="width:43%;display:inline" formControlName="btnWebsite">
+                          </div>
+                          <button class="mt-3">
+                            <u>remove button</u>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" class="card-third">
+            <div class="title">
+              <p (click)="clickMe2()" [@changeBG]="stateChangeBG2">
+                <i class="fa fa-info-circle"></i>
+                <span>App Store Links</span>
+                <span [@rotate]="stateRotate2" class="Rotate" style="">
+                  <i class="fa fa-angle-down"></i>
+                </span>
+              </p>
+              <div class="contenText" [@animateSlide2]='stateOpen2'>
+                <p>Type in links to your app in the app Store. At list on links has to be provided</p>
+                <div class="form1 p-3">
+                  <form [formGroup]="appStore" (ngSubmit)="submitAppStore()">
+
+                    <div class="row mt-3">
+                      <div class="col-2">
+                        <label>App Store</label>
+                      </div>
+                      <div class="col-8">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-apple"></i>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" formControlName="nameApple" placeholder="https://glyphsearch.com/?library=font-awesome&query=an">
+                        </div>
+                        <div class="dropdown apple">
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            search app store
+                          </button>
+                          <div class="dropdown-menu ">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                  <i class="fa fa-search"></i>
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="searchApp" placeholder="app name">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-2">
+                        <label>Google play</label>
+                      </div>
+                      <div class="col-8">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-android"></i>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" formControlName="namePlay" placeholder="https://glyphsearch.com/?library=font-awesome&query=an">
+                        </div>
+                        <div class="dropdown apple">
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            search play store
+                          </button>
+                          <div class="dropdown-menu ">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                  <i class="fa fa-search"></i>
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="searchPlay" placeholder="app name">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-2">
+                        <label>Amazon</label>
+                      </div>
+                      <div class="col-8">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-amazon"></i>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" formControlName="nameAmazon" placeholder="http://www.amazon.com">
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" class="card-four">
+            <div class="title">
+              <p (click)="clickMe3()" [@changeBG]="stateChangeBG3">
+                <i class="fa fa-info-circle"></i>
+                <span>Wellcome Screen</span>
+                <span [@rotate]="stateRotate3" class="Rotate" style="">
+                  <i class="fa fa-angle-down"></i>
+                </span>
+              </p>
+              <div class="contenText" [@animateSlide]='stateOpen3'>
+                <p>Display your logo while your page is loading</p>
+                <div class="form1 p-3">
+                  <form [formGroup]="screen" (ngSubmit)="submitScreen()">
+
+                    <div class="row mt-5">
+                      <div class="col-2">
+                        <label>Image</label>
+                        <i class="fa fa-question-circle"></i>
+                      </div>
+                      <div class="col-4 ScreenCenter">
+                        <img src="https://hinhanhdephd.com/wp-content/uploads/2017/06/top-100-hinh-nen-thien-nhien-phong-canh-dep-6-1-356x220.jpg"
+                          class="img-fluid">
+                      </div>
+                      <div class="col-4">
+                        <input type="file" formcontrolName="change">
+                      </div>
+                    </div>
+
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" class="card-five">
+            <div class="title">
+              <p (click)="clickMe4()" [@changeBG]="stateChangeBG4">
+                <i class="fa fa-info-circle"></i>
+                <span>Advanced option</span>
+                <span [@rotate]="stateRotate4" class="Rotate" style="">
+                  <i class="fa fa-angle-down"></i>
+                </span>
+              </p>
+              <div class="contenText" [@animateSlide3]='stateOpen4'>
+                <p>Advanced Option</p>
+                <div class="form1 p-3">
+                  <form [formGroup]="AdvancedOption" (ngSubmit)="submitOpen()">
+
+                    <div class="row mt-2">
+                      <div class="col-2">
+                        <label>label</label>
+                        <i class="fa fa-question-circle"></i>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" formcontrolName="label" placeholder="my app QR code" class="form-control">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="bgIphone">
+          <img src="../../assets/image/iphone.png">
+          <div class="AppContent text-center">
+            <p class="text-right pt-3 mb-0" style="padding-right:20px;font-size:25px">
+              <i class="fa fa-share-alt"></i>
+            </p>
+            <h3>Thu</h3>
+            <p>ahihi</p>
+            <img src="../../assets/image/logo.png" class="img-fluid img1">
+            <h4>Picture editing like a pro</h4>
+            <span>Turn your photos in professional artword with detailed editting ...
+              <a>more</a>
+            </span>
+            <img src="../../assets/image/google-en.png" class="img-fluid img2">
+            <img src="../../assets/image/apple-en.png" class="img-fluid img2 mb-4">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
